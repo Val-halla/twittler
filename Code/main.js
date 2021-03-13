@@ -13,7 +13,7 @@ function display() {
   while (index >= 0) {
     var tweet = streams.home[index];
     var $tweet = $('<div class = "tweet"></div>');
-    $tweet.text('@' + tweet.user + ': ' + tweet.message + ' ' + ' published:' + tweet.created_at.getMinutes() + ' minutes');
+    $tweet.text('@' + tweet.user + ': ' + tweet.message + ' ' + ' published:' + tweet.created_at.getMinutes() + ' minutes ago');
     $tweet.appendTo($body);
     index -= 1;
 
